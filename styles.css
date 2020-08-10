@@ -1,0 +1,89 @@
+.container {
+    width: 10%;
+    height: 0;
+    padding-top: 48%;
+    position: relative;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  @-webkit-keyframes move
+  {
+      from {
+          left: 0;
+      }
+      to {
+          left: 50%;
+      }
+  }
+  
+  @keyframes move
+  {
+      from {
+          left: 0;
+      }
+      to {
+          left: 90%;
+      }
+  }
+  
+  @-webkit-keyframes moveL
+  {
+      from {
+          left: 100%;
+      }
+      to {
+          left: 20%;
+      }
+  }
+  
+  @keyframes moveL
+  {
+      from {
+          left: 100%;
+      }
+      to {
+          left: 20%;
+      }
+  }
+  
+  div#cloud1 {
+      text-decoration: none;
+      padding-right: 20px;
+      left: 50%;
+      position: absolute;
+      -webkit-animation: move 5s;
+      animation: move 5s;
+  }
+  
+  div#cloud1 img {
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out; 
+      -o-transition: all 1s ease-in-out; 
+      -ms-transition: all 1s ease-in-out; 
+      border-radius:60px;
+      transition-duration: 1s;
+   }
+   
+   div#cloud2 {
+      text-decoration: none;
+      padding-right: 20px;
+      left: 50%;
+      position: absolute;
+      -webkit-animation: moveL 5s;
+      animation: moveL 5s;
+  }
+  
+  div#cloud2 img {
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out; 
+      -o-transition: all 1s ease-in-out; 
+      -ms-transition: all 1s ease-in-out; 
+      border-radius:60px;
+      transition-duration: 1s;
+   }
+  
